@@ -39,3 +39,16 @@ da seguinte maneira:
   * **(Xi−μ)** é o vetor da diferença entre a observação Xi e a média μ.
   * **(Xi−μ)^T** é o transposto deste vetor de diferença.
 
+- Os *eigenvectors* e seus correspondentes *eigenvalues* são computados utilizando a seguinte fórmula:
+
+    <img src="https://i.ibb.co/QphWpyj/Captura-de-tela-2024-01-17-224653.png">
+
+   * **C** representa a matriz de covariância dos dados. Trazendo ao nosso contexto de reconhecimento facial, é a matriz de covariância das imagens faciais cujo cada uma foi transformada em um vetor.
+   * **V** são os autovetores dessa matriz *C*. Para o algoritmo Eigenfaces, os autovetores são chamados de Eigenfaces. Cada Eigenface é uma direção no espaço multidimensional que maximiza a variância dos dados.
+   * **λ** representa os autovalores associados a cada autovetor *V*. Cada autovalor indica a quantidade de variância capturada por seu respectivo autovetor/Eigenface.
+
+
+
+
+## Visão Geral do Eigenface Simplificado 🎨
+<img src="https://i.ibb.co/S759GLp/Texto-do-seu-par-grafo.jpg">
